@@ -1,0 +1,116 @@
+/* styles.css */
+
+/* Basic reset */
+body, h1, p, form, table, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a nice font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #22854e; /* Fallback color if the image doesn't load */
+    background-image: url('heart.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the whole background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the start (left) */
+    align-items: flex-start; /* Align items to the start (top) */
+    height: 100vh;
+    padding: 20px; /* Adds space from the edges */
+    position: relative; /* Required for positioning the notification and text */
+}
+
+/* Style for the heading */
+h1 {
+    font-size: 1.2em; /* Adjust the size as needed, e.g., 2em for the heading */
+    color: #c62020; /* White color for better contrast on dark background */
+    text-align: center; /* Center the heading text */
+    margin-top: 0; /* Remove any margin from the top */
+    padding-bottom: 30px; /* Add space below the heading */
+}
+
+/* Style for the result text */
+p {
+    font-size: 1.8em; /* Adjust the size as needed */
+    color: #0f0e0e; /* White color for readability */
+    text-align: left; /* Center the text */
+}
+
+/* Center the form on the left side */
+form {
+    background: #a19797;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin-left: 20px; /* Adds space between the form and the left edge */
+}
+
+/* Style the table to make it look more appealing */
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Style the input fields */
+input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Add a hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #e8a049;
+}
+
+/* Style for the notification message */
+.notification {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+/* Style for the text overlay */
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 80%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: rgb(19, 18, 19); /* Text color for contrast */
+    text-align: center; /* Center the text */
+    font-size: 34px; /* Adjust as needed */
+    padding: 30px;
+    background-color: rgba(51, 133, 135, 0.5); /* Semi-transparent background for readability */
+    border-radius: 30px;
+}
